@@ -2,82 +2,91 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta> lang="ru"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Анна Соколова — фронтенд-разработчик</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="site-header">
-    <div class="page-title">Анна Соколова</div>
+  <header class="site-header">
+    <h1 class="page-title">Анна Соколова</h1>
     <p class="tagline">Фронтенд-разработчик</p>
-  </div>
+  </header>
 
-  <div class="site-nav">
+  <nav class="site-nav">
     <a href="index.html" class="nav-link">Главная</a>
     <a href="works.html" class="nav-link">Работы</a>
     <a href="contacts.html" class="nav-link">Контакты</a>
-  </div>
+  </nav>
 
-  <div class="site-main">
+  <main class="site-main">
 
     <div class="card">
       <div class="section-title">Обо мне</div>
 
-      <img src="images/photo.svg" class="avatar">
+      <img src="images/photo.svg" class="avatar" alt="фото пользователя">
 
       <p class="text">
         Верстаю интерфейсы четвёртый год.
-        <span class="accent">Главное в моей работе:</span>
+        <strong class="accent">Главное в моей работе:</strong>
         доступность и честная семантика. Считаю, что страница должна быть
         одинаково удобной и для мыши, и для клавиатуры, и для скринридера.
       </p>
-    </div>
+    </main>
 
     <img src="images/divider.svg" class="divider"
-         alt="декоративная волнистая линия голубого цвета для визуального разделения секций страницы">
+         alt="декоративная волнистая линия">
 
     <div class="card">
-      <div class="section-title">Навыки</div>
+      <h2 class="section-title">Навыки</h2>
 
-      <div class="skills">
-        <div class="skill">HTML и семантическая вёрстка</div>
-        <div class="skill">CSS и адаптивность</div>
-        <div class="skill">Доступность (a11y)</div>
-        <div class="skill">Git и командная работа</div>
-      </div>
+      <ul class="skills">
+        <li class="skill">HTML и семантическая вёрстка</li>
+        <li class="skill">CSS и адаптивность</li>
+        <li class="skill">Доступность (a11y)</li>
+        <li class="skill">Git и командная работа</li>
+      </ul>
     </div>
 
     <div class="card">
-      <div class="section-title">Услуги</div>
+      <h2 class="section-title">Услуги</h2>
 
       <p class="text">
         Работаю по прозрачному процессу: вы всегда знаете, на каком этапе проект.
       </p>
 
-      <div class="sub-title">Этапы работы</div>
+      <h3 class="sub-title">Этапы работы</h3>
 
-      <p class="steps">1. Брифинг<br>2. Прототип<br>3. Вёрстка<br>4. Сдача проекта</p>
+      <ol class="steps">
+        <li>Брифинг</li>  
+        <li>Прототип</li> 
+        <li>Вёрстка</li> 
+        <li>Сдача проекта</li>
+      </ol>
     </div>
 
     <div class="card">
-      <div class="section-title">Проекты</div>
+      <h2 class="section-title">Проекты</h2>
 
       <img src="images/project.svg" class="shot" alt="Главная страница интернет-магазина книг">
-      <div class="caption">Проект «Букинист», 2025</div>
+      <caption class="caption">Проект «Букинист», 2025</caption>
     </div>
 
     <div class="card">
-      <div class="section-title">Стоимость</div>
+      <h2 class="section-title">Стоимость</h2>
 
-      <div class="table-title">Стоимость услуг</div>
+      <caption class="table-title">Стоимость услуг</caption>
 
       <table class="price">
+        <th>
         <tr>
           <td class="th">Услуга</td>
           <td class="th">Срок</td>
           <td class="th">Цена</td>
         </tr>
+        </th>
+        <tb>
         <tr>
           <td>Лендинг</td>
           <td>5 дней</td>
@@ -93,24 +102,25 @@
           <td>2 дня</td>
           <td>12 000 ₽</td>
         </tr>
+        </tb>
       </table>
     </div>
 
     <div class="card">
-      <div class="section-title">Связаться</div>
+      <h2 class="section-title">Связаться</h2>
 
-      <div class="btn">Показать контакты</div>
+      <button class="btn">Показать контакты</button>
 
       <p class="text">
-        Больше работ — <a href="works.html">нажмите здесь</a>.
+        Больше работ — <a href="works.html">показать портфолио</a>.
       </p>
     </div>
 
   </div>
 
-  <div class="site-footer">
+  <footer class="site-footer">
     <p class="text-small">© 2026 Анна Соколова</p>
-  </div>
+  </footer>
 
 </body>
 </html>
